@@ -1,2 +1,2 @@
 # si-contact-tracing
-Contact tracing using SI-Cards
+Little web app to do contact tracing by checking in/out with competitors' SI-Cards.
