@@ -1,0 +1,98 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+h1.title {
+    height: 100px;
+    line-height: 100px;
+    font-size: 72px;
+    margin: 0;
+    color: #292727;
+    text-align: center;
+}
+
+.counters {
+    height: auto;
+    display: flex;
+    flex-grow: 1;
+    background-color: rgb(150, 150, 150);
+}
+
+.counters .counter {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.counter-content {
+    width: 100%;
+    text-align: center;
+}
+
+.counter.result-undefined {
+    background-color: rgb(200, 200, 200);
+}
+
+.counter.result-CHECK_IN_SUCCESS {
+    background-color: rgb(0, 180, 0);
+}
+
+.counter.result-ALREADY_CHECKED_IN {
+    background-color: rgb(180, 150, 0);
+}
+
+.counter.result-CHECK_IN_DENIED {
+    background-color: rgb(200, 50, 0);
+}
+
+.counter.result-CHECK_OUT_SUCCESS {
+    background-color: rgb(0, 180, 0);
+}
+
+.counter.result-NOT_CHECKED_IN {
+    background-color: rgb(200, 50, 0);
+}
+
+.counter .set-up-button button {
+    margin: 14px 0;
+    font-size: 36px;
+}
+
+.counter .mode {
+    font-size: 72px;
+    margin: 24px 0;
+}
+
+.counter .emoji {
+    font-size: 200px;
+    margin: 24px 0;
+}
+
+.counter .message {
+    font-size: 60px;
+}
+
+.situation {
+    margin: 10px 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+.situation input {
+    margin: 10px 0;
+    border: 0;
+    font-size: 18px;
+}
