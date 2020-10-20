@@ -144,11 +144,13 @@ const Counter = (props) => {
         const handleSiCardInserted = (e: SiMainStationSiCardInsertedEvent) => {
             if (mode === CounterMode.CHECK_IN) {
                 const newResult = props.checkInSiCardNumber(e.siCard.cardNumber);
+                console.log('IN', e.siCard.cardNumber, newResult);
                 setResult(newResult);
                 e.siCard.confirm();
             }
             if (mode === CounterMode.CHECK_OUT) {
                 const newResult = props.checkOutSiCardNumber(e.siCard.cardNumber);
+                console.log('OUT', e.siCard.cardNumber, newResult);
                 setResult(newResult);
                 e.siCard.confirm();
             }
@@ -156,11 +158,13 @@ const Counter = (props) => {
         const handleSiCardObserved = (e: SiMainStationSiCardObservedEvent) => {
             if (mode === CounterMode.CHECK_IN) {
                 const newResult = props.checkInSiCardNumber(e.siCard.cardNumber);
+                console.log('IN', e.siCard.cardNumber, newResult);
                 setResult(newResult);
                 e.siCard.confirm();
             }
             if (mode === CounterMode.CHECK_OUT) {
                 const newResult = props.checkOutSiCardNumber(e.siCard.cardNumber);
+                console.log('OUT', e.siCard.cardNumber, newResult);
                 setResult(newResult);
                 e.siCard.confirm();
             }
