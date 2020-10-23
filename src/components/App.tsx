@@ -209,7 +209,7 @@ function getResultEmoji(result: CheckInResult | CheckOutResult | undefined) {
         case CheckInResult.CHECK_IN_SUCCESS:
             return "😊";
         case CheckInResult.ALREADY_CHECKED_IN:
-            return "🤷";
+            return "❔";
         case CheckInResult.CHECK_IN_DENIED:
             return "✋";
         case CheckOutResult.CHECK_OUT_SUCCESS:
